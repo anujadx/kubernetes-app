@@ -16,11 +16,11 @@ spec:
     spec:
       containers:
       - name: vproapp
-        image: anuja1994/vprofileapp:latest
+        image: nuja1994/vprofileapp:latest
         ports:
         - name: vproapp-port
           containerPort: 8080
-    initContainers:
+      initContainers:
       - name: init-mydb
         image: busybox
         command: ['sh', '-c', 'until nslookup vprodb.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for mydb; sleep 2; done;']
