@@ -4,7 +4,6 @@
 <li>Kubernetes</li>
 <li>Java</li>
 <li>AWS</li>
-<li>Memcached</li>
 <li>MySQL</li>
 
 <h3>Docker Hub Images</h3>
